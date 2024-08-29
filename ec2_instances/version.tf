@@ -1,3 +1,4 @@
+# Provider block 
 terraform {
   required_providers {
     aws = {
@@ -8,5 +9,6 @@ terraform {
 }
 
 provider "aws" {
-  region = var.region_name
+  region  = var.region_name
+  profile = var.profile_name
 }
